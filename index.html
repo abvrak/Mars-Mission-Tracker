@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Mission Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>🔴 Mars Mission Tracker</h1>
+        <p class="subtitle">Interaktywna mapa powierzchni Marsa</p>
+    </header>
+
+    <div id="controls">
+        <button class="btn active" data-layer="global">Shaded Surface Texture</button>
+        <button class="btn" data-layer="color">Color MDIM</button>
+        <button class="btn" data-layer="topo">Topografia (MOLA)</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="info-panel">
+        <h3>Współrzędne kursora</h3>
+        <p>Szerokość: <span id="lat">—</span>°</p>
+        <p>Długość: <span id="lng">—</span>°</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
