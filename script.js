@@ -35,8 +35,6 @@ const map = L.map('map', {
     zoom: 3,
     minZoom: 2,
     maxZoom: 9,
-    maxBounds: [[-90, -180], [90, 180]],
-    maxBoundsViscosity: 1.0,
     zoomControl: true
 });
 
@@ -112,14 +110,14 @@ const landingSites = [
     {
         name: 'Viking 2',
         lat: 47.9682,
-        lng: -225.7106 + 360,
+        lng: 134.2894,
         info: 'Utopia Planitia – lądowanie 3 września 1976.',
         status: 'Zakończona (1980)'
     },
     {
         name: 'Phoenix',
         lat: 68.2188,
-        lng: -125.7492 + 360,
+        lng: -125.7492,
         info: 'Green Valley (okolice bieguna północnego) – lądowanie 25 maja 2008. Potwierdzenie obecności lodu wodnego.',
         status: 'Zakończona (2008)'
     },
@@ -176,13 +174,13 @@ const pois = [
     {
         name: 'Olympus Mons',
         lat: 18.65,
-        lng: -133.8 + 360,
+        lng: -133.8,
         info: 'Największy wulkan w Układzie Słonecznym – 21,9 km wysokości, 600 km średnicy.'
     },
     {
         name: 'Valles Marineris',
         lat: -14.0,
-        lng: -59.2 + 360,
+        lng: -59.2,
         info: 'Gigantyczny kanion – 4000 km długości, do 7 km głębokości.'
     },
     {
